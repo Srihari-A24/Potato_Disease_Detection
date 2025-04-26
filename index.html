@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potato Disease Classifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1 class="title">Potato Disease Classifier</h1>
+        <p class="description">Upload an image of a potato leaf to detect its disease.</p>
+        
+        <!-- File Upload -->
+        <div class="file-input-container">
+            <input type="file" id="imageInput" accept="image/*">
+            <button class="upload-btn" onclick="uploadImage()">Predict</button>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="loading"></div>
+
+        <!-- Image Preview -->
+        <div id="imagePreviewContainer" class="image-preview-container">
+            <img id="preview" src="#" alt="Image Preview" class="preview-img" style="display:none;">
+        </div>
+
+        <!-- Prediction Result -->
+        <p id="result" class="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
